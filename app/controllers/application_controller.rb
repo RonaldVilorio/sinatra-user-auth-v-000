@@ -37,6 +37,7 @@ class ApplicationController < Sinatra::Base
 
   get '/users/home' do
     binding.pry
+    Post.all
     erb :'/users/home'
   end
 

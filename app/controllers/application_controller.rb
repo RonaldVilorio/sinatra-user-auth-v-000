@@ -37,7 +37,6 @@ class ApplicationController < Sinatra::Base
 
   get '/users/home' do
     
-
     erb :'/users/home'
   end
 

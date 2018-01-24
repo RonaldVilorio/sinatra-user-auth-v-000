@@ -20,11 +20,6 @@ class ApplicationController < Sinatra::Base
     @user.save
     session[:id] = @user.id
     redirect '/users/home'
-    if session[:id] == @user.id
-      
-    else
-      "Session ID has not been set!"
-    end
   end
 
   get '/sessions/login' do

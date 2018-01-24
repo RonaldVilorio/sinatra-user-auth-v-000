@@ -36,7 +36,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/users/home' do
-    @post = Post.find(session[:id])
     erb :'/users/home'
   end
 
